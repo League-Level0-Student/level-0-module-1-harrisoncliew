@@ -14,12 +14,12 @@ public class TheRiddler {
 
 		}
 		String riddle = JOptionPane.showInputDialog("Solve this riddle: Who is a good java programmer? ");
-		if (riddle.equals("Aidan")) {
+		if (riddle.equalsIgnoreCase("everyone in this class")) {
 			JOptionPane.showMessageDialog(null, "Correct!");
 			score++;
 			JOptionPane.showMessageDialog(null, "Your score is 2!");
 		} else {
-			JOptionPane.showMessageDialog(null, "Wrong the correct answer is Aidan.");
+			JOptionPane.showMessageDialog(null, "Wrong the correct answer is everyone in this class.");
 		}
 		String cool = JOptionPane.showInputDialog(
 				"Solve this riddle: What thing do you throw away the outside, cook the inside, then  eat the outside and throw away the inside. ");
